@@ -52,7 +52,15 @@ function makeBoard(boardString) {
 
 function find(board, word) {
   /** Can word be found in board? */
-  // TODO
+  // TODO stop case: when you reach word.length levels of recursion
+  // Logic: search for first letter, see if it exists, then check if second letter exists NEWS from 1st, etc.
+
+  if(word.length <= 1) { // reaches last letter
+    return false;
+  }
+
+  //need to keep searches between board[0] and board[board.length-1]
+  if(board[0][0] == word[0]) {}
 }
 
 // EXAMPLE TEST
